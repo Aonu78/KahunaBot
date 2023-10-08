@@ -313,6 +313,18 @@ function subblockdisplay(){
       return false;
     }
   }
+  function ValidateName(name)
+  {
+  var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+  if(name.match(regName))
+    {
+      return true;
+    }
+  else
+    {
+      return false;
+    }
+  }
 
   function postMessage() {
 
@@ -326,6 +338,13 @@ function subblockdisplay(){
     if (msg === "") return
  
     if (inputstart == 0){
+      if (ValidateName(msg)){
+        name = msg
+      }
+      else{
+        $("#namevalid").css("display","block")
+        return
+      }
       name = msg
       displayhide(sug_nm-1)
       chatBody.innerHTML += onUserMessage(msg) 
