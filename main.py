@@ -5,12 +5,22 @@ import smtplib, ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import uvicorn
+import threading
+from threading import Thread
+from email.message import EmailMessage
 
-web_mail = "admin@techelevens.com"
-password = "Gl,WlM0h}mAP"
-mail_server = "premium108.web-hosting.com"
+class EmailThread(threading.Thread):
+    def __init__(self, email_message):
+        self.email_message = email_message
+        threading.Thread.__init__(self)
+    def run(self):
+        self.email_message.send()
+
+web_mail = "booking@eaglevillageonline.com"
+password = "3onj/44R42(e"
+mail_server = "mail.eaglevillageonline.com"
 port_no = 465
-hr_email = "syedaoonhussain@gmail.com"
+hr_email = "freelancer007c@gmail.com"
 
 
 app = FastAPI()
@@ -32,7 +42,7 @@ async def login(ajax_name: Annotated[str, Form()], ajax_email: Annotated[str, Fo
     message["Subject"] = "Contact Me"
     message["From"] = hr_email
     message["To"] = web_mail
-    message_to_send = ajax_name + ajax_phone + ajax_email
+    message_to_send = "Name : "+ajax_name +"Phone : "+ ajax_phone +" Email : "+ ajax_email
     part1 = MIMEText(message_to_send, "plain")
     message.attach(part1)
     context = ssl.create_default_context()
