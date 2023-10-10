@@ -182,14 +182,14 @@ function subblockdisplay(){
     // # so we can use a API to send these data to make a notofication
     // Example of how api work for it to send data.
     // also tested
-    // $.post("https://portfolio-1-z1357684.deta.app/sendmail/",
-    //   {ajax_name:"name",
-    //   ajax_email:"syedaoonhussain@gmail.com",
-    //   ajax_phone:"phone"
-    // },
-    // function(data,status){
-    //   console.log( "email sended!" )
-    // });
+    $.post("https://kahonabot-1-r0896406.deta.app/sendmail/",
+      {ajax_name:"name",
+      ajax_email:"email",
+      ajax_phone:"phone"
+    },
+    function(data,status){
+      console.log( "email sended!" )
+    });
 
 }
 
