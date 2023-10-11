@@ -264,7 +264,7 @@ var qa = {
     },
     "Availability": {
       "answer": "In which term would you like to move in?",
-      "related": ["Immediate Move-ins!", "Fall 2024"],
+      "related": ["Immediate Move-Ins!", "Fall 2024"],
       "Back" : ["intro"]
     },
     "Fall 2024": {
@@ -276,7 +276,7 @@ var qa = {
       ],
       "Back" : ["Availability"]
     },
-    "Immediate Move-ins!": {
+    "Immediate Move-Ins!": {
       "answer": "Summer 2024 Term starts on 05/01/2024 and ends on 06/30/2024",
       "answer1": "Let's start with number of bedrooms",
       // "related": [],
