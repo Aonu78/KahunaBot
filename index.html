@@ -31,7 +31,7 @@
         <div class="d-flex align-items-center px-3 py-2 header_cls">
           <div class="sc-bdvvaa eRQARU"><div id="onlinestatus"
               class="sc-gsDJrp dmwCdz"></div></div>
-          <div class="bQtkcV">KahunaBot</div>
+          <div class="bQtkcV">Eagle Chat</div>
           <div class="float-right">
             <i class="showPointer fa-solid fa-minus me-3"
               onclick="toggleWindow()" style="transform:translateY(4px)"></i>
@@ -67,7 +67,7 @@
       <div class="text-end" id="minimalBot">
         <div><img id="smallBot" onclick="toggleWindow()"
             class="showPointer removeShadow"
-            src="https://i.ibb.co/BLKZpLz/eagle.png"
+            src="static/img/eagle.png"
             height="72" /></div>
       </div>
     </div>
@@ -195,8 +195,7 @@ function subblockdisplay(){
 
   function getOption(t) {
     var opt = t.target.innerText
-
-    if (opt == ''){var opt = t.target.id}
+    if (opt == ''){opt = t.target.id}
     displayhide(sug_nm-1)
     Prev = opt
     chatBody.innerHTML += onUserMessage(opt)
@@ -250,7 +249,11 @@ function subblockdisplay(){
       tem = 1,
       Previous.push(opt)
     }
+    // alert(qa[opt]['answer'])
+    // alert("@@@@@@@@@@@")
     if (qa[opt] === undefined) return onBotMessage(qa.intro)
+    // alert(opt)
+    // alert(qa[opt]['answer'])
     onBotMessage(qa[opt])
   }
   function endChat() {
@@ -374,7 +377,7 @@ function subblockdisplay(){
       
       displayhide(sug_nm-1)
       chatBody.innerHTML += onUserMessage(msg) 
-      msg = "thanks"
+      msg = "Thanks"
       inputstart = 0
       emailbl = false
       phonebl = false

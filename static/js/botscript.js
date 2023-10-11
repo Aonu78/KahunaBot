@@ -16,43 +16,43 @@ var qa = {
     },
     "Safety": {
         "answer": "Now select a question",
-        "related" : ["What if there is a fire?"],
+        "related" : ["What If There Is A Fire?"],
     },
-    "What if there is a fire?": {
+    "What If There Is A Fire?": {
         "answer": "Call 911 & notify the office.",
     },
     "Rent": {
         "answer": "Now select a question",
-        "related" : ["When is rent due?","Is there a late fee?"],
+        "related" : ["When Is Rent Due?","Is There A Late Fee?"],
     },
-    "When is rent due?": {
+    "When Is Rent Due?": {
         "answer": "On the 1st of the month.",
     },
-    "Is there a late fee?": {
+    "Is There A Late Fee?": {
         "answer": "Yes.",
     },
     "Policies": {
         "answer": "Now select a question",
-        "related" : ["Do you require renters insurance?"],
+        "related" : ["Do You Require Renters Insurance?"],
     },
-    "Do you require renters insurance?": {
+    "Do You Require Renters Insurance?": {
         "answer": "Yes.",
     },
     "Parking": {
         "answer": "Now select a question",
-        "related" : ["Is there VIP Parking?","Is there guest parking?"],
+        "related" : ["Is There VIP Parking?","Is There Guest Parking?"],
     },
-    "Is there VIP Parking?": {
+    "Is There VIP Parking?": {
         "answer": "Yes. There is a monthly fee.",
     },
-    "Is there guest parking?": {
+    "Is There Guest Parking?": {
         "answer": "Yes. Resident parking must have a permit.",
     },
     "Maintenance": {
         "answer": "Now select a question",
-        "related" : ["A/C or Heat is out?","Non Emergency?"],
+        "related" : ["A/C Or Heat Is Out?","Non Emergency?"],
     },
-    "A/C or Heat is out?": {
+    "A/C Or Heat Is Out?": {
         "answer": "Call Office.",
     },
     "Non Emergency?": {
@@ -60,32 +60,32 @@ var qa = {
     },
     "Lease": {
         "answer": "Now select a question",
-        "related" : ["How long's the lease?","Can I renew early?"],
+        "related" : ["How Long's The Lease?","Can I Renew Early?"],
     },
-    "How long's the lease?": {
+    "How Long's The Lease?": {
         "answer": "Annual",
     },
-    "Can I renew early?": {
+    "Can I Renew Early?": {
         "answer": "Contact office.",
     },
     "Community FAQ": {
         "answer": "Now select a question",
-        "related" : ["What are quiet hours?","What are the office hours?"],
+        "related" : ["What Are Quiet Hours?","What Are The Office Hours?"],
     },
-    "What are quiet hours?": {
+    "What Are Quiet Hours?": {
         "answer": "10PM to 7AM.",
     },
-    "What are the office hours?": {
+    "What Are The Office Hours?": {
         "answer": "M-F 10AM to 6PM, Sat 10AM to 2PM, Sun CLOSED.",
     },
     "Amenities FAQ": {
         "answer": "Now select a question",
-        "related" : ["When's the Community Room open?","When is the tanning bed open?"],
+        "related" : ["When's The Community Room Open?","When Is The Tanning Bed Open?"],
     },
-    "When's the Community Room open?": {
+    "When's The Community Room Open?": {
         "answer": "24HR",
     },
-    "When is the tanning bed open?": {
+    "When Is The Tanning Bed Open?": {
         "answer": "During office hours.",
     },
     "Resident Portal": {
@@ -144,26 +144,33 @@ var qa = {
       },
       "Local Schools": {
         "answer": "Now select a question",
-        "related": ["What are the local schools?"],
+        "related": ["What Are The Local Schools?"],
         "Back" : ["intro"]
       },
-      "What are the local schools?": {
-        "answer": "USI College<br>Reitz High School<br>Mater Dei Catholic High School<br>Perry Heights Middle School<br>Corpus Christi Catholic School<br>West Terrace Elementary School",
+      "What Are The Local Schools?": {
+        
+        "answer": `<div class='sc-bBHHQT cbVbsH circle'><img src='static/img/check-icon-purple.png'></div>USI College<br>
+        <div class='sc-bBHHQT cbVbsH circle'><img src='static/img/check-icon-purple.png'></div>Reitz High School<br>
+        <div class='sc-bBHHQT cbVbsH circle'><img src='static/img/check-icon-purple.png'></div>Mater Dei Catholic High School<br>
+        <div class='sc-bBHHQT cbVbsH circle'><img src='static/img/check-icon-purple.png'></div>Corpus Christi Catholic School<br>
+        <div class='sc-bBHHQT cbVbsH circle'><img src='static/img/check-icon-purple.png'></div>West Terrace Elementary School<br>
+        <div class='sc-bBHHQT cbVbsH circle'><img src='static/img/check-icon-purple.png'></div>Perry Heights Middle School<br>`,
+        
         "related": ["Neighborhood"],
       },
       "Application Process": {
         "answer": "Now select a question",
-        "related": ["What are the application fees?"],
+        "related": ["What Are The Application Fees?"],
         "Back" : ["intro"]
       },
-      "What are the application fees?": {
+      "What Are The Application Fees?": {
         "answer": "$150 Security Deposit",
         // "related": ["What are the application fees?"],
         "Back" : ["intro"]
       },
       "Neighborhood": {
         "answer": "Lots to do in this area. Here are a few things you might find of interest",
-        "related": ["Dining & Cafes","Entertainment","Grocery","Gyms","Nightlife","Parks","Salon & Spa","Schools","Shopping","Transportation"], 
+        "related": ["Dining & Cafes","Entertainment","Grocery","Gyms","Nightlife","Parks","Schools","Shopping","Transportation"], 
         "Back" : ["intro"]
       },
       "Transportation": {
@@ -177,10 +184,6 @@ var qa = {
       "Schools": {
         "answer": "Gyms for your brain",
         "rating": [`<div class='mapdiv' id="ratingid"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d25161.691669981883!2d-87.6614565840267!3d37.97219417866731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSchools!5e0!3m2!1sen!2s!4v1696540783587!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>`],
-      },
-      "Salon & Spa": {
-        "answer": "Lookin' good!",
-        "rating": [`<div class='mapdiv' id="ratingid"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d25161.692901262915!2d-87.66145660025776!3d37.97219058643302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSalon%20%26%20Spa!5e0!3m2!1sen!2s!4v1696540821306!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>`],
       },
       "Parks": {
         "answer": "For some nice walks and exercise",
@@ -207,8 +210,12 @@ var qa = {
         "rating": [`<div class='mapdiv' id="ratingid"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d100646.921831327!2d-87.72325800027744!3d37.97208101586279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sDining%20%26%20Cafes!5e0!3m2!1sen!2s!4v1696541048856!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>`],
       },
 
-      "Pet Policy": {
-        "answer": "Pets Negotiable<br>Dogs and Cats Allowed<br>$500 Fee & $25mo Fee<br>2 Pet Limits",
+      "Pet Policy": {        
+        "answer": `<div class='sc-bBHHQT cbVbsH circle'><img src='static/img/check-icon-purple.png'></div>Pets Negotiable<br>
+        <div class='sc-bBHHQT cbVbsH circle'><img src='static/img/check-icon-purple.png'></div>Dogs and Cats Allowed<br>
+        <div class='sc-bBHHQT cbVbsH circle'><img src='static/img/check-icon-purple.png'></div>$500 Fee & $25mo Fee<br>
+        <div class='sc-bBHHQT cbVbsH circle'><img src='static/img/check-icon-purple.png'></div>2 Pet Limits<br>`,
+        
         "related": ["Contact Me","Availability"], 
         "Back" : ["intro"]
       },
@@ -257,22 +264,22 @@ var qa = {
     },
     "Availability": {
       "answer": "In which term would you like to move in?",
-      "related": ["Summer 2024", "Fall 2024"],
+      "related": ["Immediate Move-ins!", "Fall 2024"],
       "Back" : ["intro"]
     },
     "Fall 2024": {
       "answer": "Fall 2024 Term starts on 08/01/2024 and ends on 07/31/2025",
       "answer1": "Let's start with number of bedrooms",
-      "related": [],
+      // "related": [],
       "images" : ["<div class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='static/img/1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='1 Bed' id='1 Bed'><div></div></div></div>",
         // "<div class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='2 Bad' id='2 Bad'><div></div></div></div>"
       ],
       "Back" : ["Availability"]
     },
-    "Summer 2024": {
+    "Immediate Move-ins!": {
       "answer": "Summer 2024 Term starts on 05/01/2024 and ends on 06/30/2024",
       "answer1": "Let's start with number of bedrooms",
-      "related": [],
+      // "related": [],
       "images" : ["<div class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='static/img/1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='1 Bed' id='1 Bed'><div></div></div></div>",
         // "<div class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='2 Bad' id='2 Bad'><div></div></div></div>"
       ],
@@ -280,21 +287,21 @@ var qa = {
     },
     "1 Bed": {
       "answer": "And how much are you looking to spend each month?",
-      "related": ["Starting at $800", "Any"],
+      "related": ["Call Office For Pricing 812-401-1454", "Any"],
       "Back" : ["Summer 2024"]
     },
     "Any": {
       "answer": "You're in luck, I have exactly what you need. Check out the floorplans below",
       "img_slide" : ["<img src='https://eaglevillageonline.com/wp-content/uploads/2022/09/Eagle-Village-Floorplan-4x4-1.png' onclick='getOption(event)' value='Property 1' id='Property 1' alt='' style='width: 400px;'>"],
     },
-    "Starting At $800.": {
+    "Call Office For Pricing 812-401-1454.": {
       "answer": "You're in luck, I have exactly what you need. Check out the floorplans below",
       "answer1":"You are looking at floorplans in Fall 2024 (08/01/2024 - 07/31/2025).",
       "img_slide" : ["<img src='https://eaglevillageonline.com/wp-content/uploads/2022/09/Eagle-Village-Floorplan-4x4-1.png' onclick='getOption(event)' value='Property 1' id='Property 1' alt='' style='width: 400px;'>"],
       "related": [],
       "Back" : ["1 Bed"]
     },
-    "Starting At $800": {
+    "Call Office For Pricing 812-401-1454": {
       "answer": "You're in luck, I have exactly what you need. Check out the floorplans below",
       "answer1":"You are looking at floorplans in Summer 2024 (05/01/2024 - 06/30/2024).",
       "img_slide" : ["<img src='https://eaglevillageonline.com/wp-content/uploads/2022/09/Eagle-Village-Floorplan-4x4-1.png' onclick='getOption(event)' value='Property 1' id='Property 1' alt='' style='width: 400px;'>"],
@@ -313,20 +320,24 @@ var qa = {
     "Property Tours": {
       "answer": "Choose a 3D Tour",
       // "related1": ["<a href='https://www.apartments.com/eagle-village-student-housing-evansville-in/dxvcllk/'>Apartments</a>","<a href='https://matterport.com/discover/space/4tdTZbXUF7A'>Matterport 1</a>","<a href='https://matterport.com/discover/space/pf3yPdi1fqd'>Matterport 1</a>"],
-      "related" : ["Apartments Site","Matterport 1","Matterport 2"],
+      "related" : ["Resident Louge","4BR, 2BA - Model - 1,200SF","4BR, 2BA - 1,200SF","Basketball Court"],
       "Back" : ["3D Tour"]
     },
-    "Matterport 2": {
+    "Basketball Court": {
+      "answer": "Enjoy Tour",
+      "d_img" : ["<div class='sc-pVTma kRPzFu' style='margin-left: 8%;' id='d_img'><iframe title='google-map' src='https://my.matterport.com/show/?m=FMvaG45SGU3&amp;play=1' frameborder='0' scrolling='no' class='sc-hAcGfq ljIvEq'></iframe></div>"],
+    },
+    "4BR, 2BA - 1,200SF": {
       "answer": "Enjoy Tour",
       "d_img" : ["<div class='sc-pVTma kRPzFu' style='margin-left: 8%;' id='d_img'><iframe title='google-map' src='https://my.matterport.com/show/?m=pf3yPdi1fqd&amp;play=1' frameborder='0' scrolling='no' class='sc-hAcGfq ljIvEq'></iframe></div>"],
     },
-    "Matterport 1": {
+    "4BR, 2BA - Model - 1,200SF": {
       "answer": "Enjoy Tour",
       "d_img" : ["<div class='sc-pVTma kRPzFu' style='margin-left: 8%;' id='d_img'><iframe title='google-map' src='https://my.matterport.com/show/?m=4tdTZbXUF7A&amp;play=1' frameborder='0' scrolling='no' class='sc-hAcGfq ljIvEq'></iframe></div>"],
     },
-    "Apartments Site": {
+    "Resident Louge": {
       "answer": "Enjoy Tour",
-      "d_img" : ["<div class='sc-pVTma kRPzFu' style='margin-left: 8%;' id='d_img'><iframe title='google-map' src='https://www.apartments.com/eagle-village-student-housing-evansville-in/dxvcllk/' frameborder='0' scrolling='no' class='sc-hAcGfq ljIvEq'></iframe></div>"],
+      "d_img" : ["<div class='sc-pVTma kRPzFu' style='margin-left: 8%;' id='d_img'><iframe title='google-map' src='https://my.matterport.com/show/?m=aQ3YJ24qE5m&amp;play=1' frameborder='0' scrolling='no' class='sc-hAcGfq ljIvEq'></iframe></div>"],
     },
     "1 Bedroom": {
       "answer": "Enjoy 3D Tour",
@@ -401,7 +412,7 @@ var qa = {
       "answer": "Thanks we will contant you soon",
       "related": ["Availability", "Contact Me", "Schedule Appointment", "Community Info", "3D Tour", "Photos", "Current Resident"],
     },
-    "thanks": {
+    "Thanks": {
       "answer": "thanks we will contact you soon"
     },
   }
