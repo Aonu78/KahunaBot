@@ -876,6 +876,9 @@ margin-left: 30%;
 
 @media screen and (max-width: 500px)
 {
+  .fIpSMA{
+    margin-left: -10px;
+  }
 .llLJZS{
 margin-left: 10%;
 }

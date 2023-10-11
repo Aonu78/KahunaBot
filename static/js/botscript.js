@@ -271,18 +271,14 @@ var qa = {
       "answer": "Fall 2024 Term starts on 08/01/2024 and ends on 07/31/2025",
       "answer1": "Let's start with number of bedrooms",
       // "related": [],
-      "images" : ["<div class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='static/img/1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='1 Bed' id='1 Bed'><div></div></div></div>",
-        // "<div class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='2 Bad' id='2 Bad'><div></div></div></div>"
-      ],
+      "images" : ["<div class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='static/img/1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='1 Bed' id='1 Bed'><div></div></div></div>"],
       "Back" : ["Availability"]
     },
     "Immediate Move-Ins!": {
       "answer": "Summer 2024 Term starts on 05/01/2024 and ends on 06/30/2024",
       "answer1": "Let's start with number of bedrooms",
       // "related": [],
-      "images" : ["<div class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='static/img/1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='1 Bed' id='1 Bed'><div></div></div></div>",
-        // "<div class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='2 Bad' id='2 Bad'><div></div></div></div>"
-      ],
+      "images" : ["<div class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='static/img/1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='1 Bed' id='1 Bed'><div></div></div></div>"],
       "Back" : ["Availability"]
     },
     "1 Bed": {
