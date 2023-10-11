@@ -49,7 +49,7 @@
 
   #chatBody {
     height: 100%;
-    min-height: 80%;
+    min-height: 85%;
     max-height: 60vh;
     overflow: auto
   }
@@ -60,7 +60,7 @@
     margin-left: 70%;
     /* height: 15px; */
     /* margin-bottom: -62px; */
-    margin-top: 33px;
+    /* margin-top: 33px; */
     margin-left: 70%;
     height: 21px;
     /* margin-bottom: -26px; */
@@ -226,7 +226,7 @@ font-family: 'Lato';
        width: 95%!important;
     }
     .fzBOpH {
-      margin-top: 52px;}
+      margin-top: 20px;}
   }
     .dmwCdz {
 height: 12px;
@@ -280,11 +280,15 @@ gap: 10px 11px;
 }
 
 @media screen and (max-width: 500px){
+  #chatBody{
+    max-height: 89vh;
+  }
 .fzBOpH {
-margin-left: 60%;
+margin-left: 50%;
 float: left;
-height: 13px;
-margin-top: 60px;}
+height: 18px;
+margin-top: -5px;
+}
 .botMessage{
 margin-left: 8%;
 }#chatbotWindow {
