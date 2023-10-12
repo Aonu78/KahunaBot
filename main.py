@@ -20,7 +20,7 @@ web_mail = "booking@eaglevillageonline.com"
 password = "3onj/44R42(e"
 mail_server = "mail.eaglevillageonline.com"
 port_no = 465
-hr_email = "syedaoonhussain@gmail.com"
+hr_email = "freelancer007c@gmail.com"
 
 
 app = FastAPI()
