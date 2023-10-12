@@ -20,7 +20,7 @@ web_mail = "booking@eaglevillageonline.com"
 password = "3onj/44R42(e"
 mail_server = "mail.eaglevillageonline.com"
 port_no = 465
-hr_email = "freelancer007c@gmail.com"
+hr_email = "syedaoonhussain@gmail.com"
 
 
 app = FastAPI()
@@ -37,12 +37,12 @@ app.add_middleware(
 
 
 @app.post("/sendmail/")
-async def login(ajax_name: Annotated[str, Form()], ajax_email: Annotated[str, Form()],ajax_phone: Annotated[str, Form()]):
+async def login(ajax_name: Annotated[str, Form()], ajax_email: Annotated[str, Form()],ajax_phone: Annotated[str, Form()],ajax_appointment: Annotated[str, Form()],ajax_purpose: Annotated[str, Form()]):
     message = MIMEMultipart("alternative")
-    message["Subject"] = "Contact Me"
+    message["Subject"] = ajax_appointment +" "+ajax_purpose
     message["From"] = hr_email
     message["To"] = web_mail
-    message_to_send = "Name : "+ajax_name +"Phone : "+ ajax_phone +" Email : "+ ajax_email
+    message_to_send = "Name : "+ajax_name+"\n"+"Phone : "+ ajax_phone+"\n"+"Email : "+ajax_email
     part1 = MIMEText(message_to_send, "plain")
     message.attach(part1)
     context = ssl.create_default_context()

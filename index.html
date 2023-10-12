@@ -116,6 +116,8 @@
   var Previous = []
   var tem = 0
   var foulWords = ["shit", "bitch", "cunt", "pussy", "asshole", "gay", "piss", "hell", "fuck", "dick", "cock", "titty", "nigger"]
+  var appointment = ''
+  var purpose = ''
 
   var slideIndex = 0
   showDivs(slideIndex)
@@ -183,9 +185,11 @@ function subblockdisplay(){
     // Example of how api work for it to send data.
     // also tested
     $.post("https://kahonabot-1-r0896406.deta.app/sendmail/",
-      {ajax_name:"name",
-      ajax_email:"email",
-      ajax_phone:"phone"
+      {ajax_name:name,
+      ajax_email:email,
+      ajax_phone:phone,
+      ajax_appointment:appointment,
+      ajax_purpose:purpose
     },
     function(data,status){
       console.log( "email sended!" )
@@ -200,34 +204,50 @@ function subblockdisplay(){
     Prev = opt
     chatBody.innerHTML += onUserMessage(opt)
     if("Live Video" == opt){
+      appointment = 'Schedule Appointment'
+      purpose = 'For Live Video'
       phonebl = true
       opt = "Name"
     }
     if("Self-Guided" == opt){
+      appointment = 'Schedule Appointment'
+      purpose = 'For Self-Guided'
       phonebl = true
       opt = "Name"
     }
     if("Phone Call" == opt){
+      appointment = 'Schedule Appointment'
+      purpose = 'For Phone Call'
       phonebl = true
       opt = "Name"
     }
     if("In-Person" == opt){
+      appointment = 'Schedule Appointment'
+      purpose = 'For In-Person'
       phonebl = true
       opt = "Name"
     }
     if("Phone" == opt){
+      appointment = 'Contact Me'
+      purpose = 'For Phone'
       phonebl = true
       opt = "Name"
     }
     if("Email" == opt){
+      appointment = 'Contact Me'
+      purpose = 'For Email'
       emailbl = true
       opt = "Name"
     }
     if("Text" == opt){
+      appointment = 'Contact Me'
+      purpose = 'For Text'
       textbl = true
       opt = "Name"
     }
     if("Brochure" == opt){
+      appointment = 'Contact Me'
+      purpose = 'For Brochure'
       phonebl = true
       opt = "Name"
     }
