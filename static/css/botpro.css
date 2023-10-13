@@ -10,9 +10,16 @@
   .showPointer {
     cursor: pointer;
   }
+  .href-color{
 
+  }
+  .btn_color_chat {
+    color: #fff;
+    background-color: #0d4079;
+    border-color: #0d4079;
+}
   #smallBot {
-    background: #f29b6d;
+    background: #0d4079;
     padding: 12px;
     box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 100%
@@ -607,6 +614,8 @@ z-index: -10;
 .gGlNMg:hover {background-color: #0d4079;
 color: #fff;}
 .gGlNMg:hover .eNjgfc{color: #fff;background:#fff;}
+.gGlNMg:hover .href-color{color: #fff;}
+
 .gGlNMg:hover .eNjgfc::before{color: #fff;background:#fff;}
 .gGlNMg:hover .eNjgfc::after{color: #fff;background:#fff;}
 

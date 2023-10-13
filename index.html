@@ -39,16 +39,7 @@
           </div>
         </div>
       <div id="chatBody" class="p-3">
-
-
-      <!-- <div class="botMessageWrap"><div class="row" style="">
-        <div class="botName col-2"><img src="static/img/eagle.png" alt="" class="fIpSMA"></div>
         
-        <div class="botMessage col">Enter Valid Phone Number to Proceed Further.</div>
-      </div>
-      
-      <div id="searchbox" class="sc-iJKOzS ipvcDU InputWrapper"><input type="number" id="valueBox" onkeyup="enterPressed(event)" class="sc-giYgFv eWnKHk StyledTextarea" placeholder="(xxx) xxx-xxxx" maxlength="13"><button onclick="postMessage()" class="sc-ezbkgU kYMLCs"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="paper-plane" class="svg-inline--fa fa-paper-plane fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M440 6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192 464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z"></path></svg></button></div></div> -->
-
 
       </div>
         <div id="chat_footer" class="footer_div px-3 py-2 align-items-center justify-content-between">
@@ -162,6 +153,7 @@ function subblockdisplay(){
     $('#searchbox').remove()
     $('#ratingid').remove()
     $('#d_img').remove()
+    $('#images_btn').remove()
 
   }
   $( document ).ready(async function() {
@@ -285,7 +277,7 @@ function subblockdisplay(){
     var html = `<div class="mt-4 card p-3 text-center" id="${id}">
         <h4 class="pt-2 pb-3">End chat ?</h4>
         <div class="d-flex">
-          <button class="btn btn-danger w-100 me-1" onclick="closeDialog = false;closeChat()">OK</button>
+          <button class="btn_color_chat w-100 me-1" onclick="closeDialog = false;closeChat()">OK</button>
           <button class="btn btn-outline-secondary w-100 ms-1" onclick="closeDialog = false;cancelClose('${id}')">Cancel</button>
         </div>
       </div>`
@@ -427,11 +419,23 @@ function subblockdisplay(){
 
   }
   function onUserMessage(msg) {
-    return `<div class="sc-jgrIVw gFdBvJ UserMessageContainer">
-              <div class="sc-gSQGeZ hBtfkL bubble">
-                <span>${msg}</span>
-              </div>
-          </div>`}
+    if (msg == '1 Bed'){return `<div class="sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper">
+          <div class="sc-iNGGwv IZIJi Bubble user-messages" title="selected-image" data="[object Object]">
+            <img alt="beds:1 bedrooms image" src="static/img/1bd.png" class="sc-jeqYYF cSTbkS">
+          </div>
+        </div>`}
+    if (msg == 'Call Office For Pricing 812-401-1454'){ return `<div class="sc-jgrIVw gFdBvJ UserMessageContainer">
+          <div class="sc-gSQGeZ hBtfkL bubble">
+            <span>Call Office For Pricing <a href="tel:8124011454"><div class='sc-bBHHQT cbVbsH circle'><img src='static/img/telephone.png'></div>812-401-1454</a></span>
+          </div>
+      </div>`}
+      else {
+      return `<div class="sc-jgrIVw gFdBvJ UserMessageContainer">
+                <div class="sc-gSQGeZ hBtfkL bubble">
+                  <span>${msg}</span>
+                </div>
+            </div>`}
+    }
 
   function onBotMessage(args) {
     html = `<div class="botMessageWrap"><div class="row" style="">

@@ -94,7 +94,7 @@ var qa = {
     },
     "Resident Portal": {
         "answer": "You're leaving me, but no worries, I'll be here if you need me (sending to another page)",
-        "related1" : ["<a href='https://kahunaeaglevillage.residentportal.com/auth'>Proceed to Portal</a>"],
+        "related1" : ["<a class='href-color' href='https://kahunaeaglevillage.residentportal.com/auth' target='_blank'>Proceed to Portal</a>"],
         "Back" : ["intro"]
     },
     "Contacts": {
@@ -122,7 +122,7 @@ var qa = {
     "Reviews & Ratings": {
     "answer": "Here's what people are saying about us.",
     // "img_slide" : ["<img src='https://i.ibb.co/JtTqRFR/Property-Map.jpg' alt='' style='width: 400px;'>"],
-    "rating": [`<div class="sc-hYQoDq dWdoTO SpecialsWrapper" type="review" id='ratingid'><div class="sc-dwsomb bkqRJS ReviewQuicklinksContainer"><div class="sc-pVTma sc-eldixR kRPzFu ffjCOc ReviewQuicklinksWrapper"><div tabindex="0" role="button" class="sc-bkkfTU sc-jtXFOG llLJZS cqulfq"><div class="sc-iqsfdx sc-fFehDp sc-kiIAaw gGlNMg gqjeva fYYww ReviewText quicklinks rating-cls" tabindex="-1"><div class="sc-cLpA-Dr ljfpXX">4</div><img src="static/img/regular_5.svg" alt="Stars Rating" class="sc-iIUSfW heuGYt"><div class="sc-cvZATX jjgzVw"></div><div class="sc-avfBU gRwYBo" style="margin-right: 6rem;"><img src="static/img/google.png" alt="Logo Image" class="sc-gslxyl dgLPQS"><div color="#6F6E6E" class="sc-kmQMkS eoLnMo">236 Reviews</div></div></div></div></div></div></div>`],
+    "rating": [`<a target='_blank' href='https://www.google.com/maps/place/Eagle+Village+Student+Apartments/@37.96919,-87.66381,15z/data=!4m8!3m7!1s0x8871d2d960cf52e7:0x4a49850cdd410d3f!8m2!3d37.96919!4d-87.66381!9m1!1b1!16s%2Fg%2F1wf22lvy?entry=ttu'><div class="sc-hYQoDq dWdoTO SpecialsWrapper" type="review" id='ratingid'><div class="sc-dwsomb bkqRJS ReviewQuicklinksContainer"><div class="sc-pVTma sc-eldixR kRPzFu ffjCOc ReviewQuicklinksWrapper"><div tabindex="0" role="button" class="sc-bkkfTU sc-jtXFOG llLJZS cqulfq"><div class="sc-iqsfdx sc-fFehDp sc-kiIAaw gGlNMg gqjeva fYYww ReviewText quicklinks rating-cls" tabindex="-1"><div class="sc-cLpA-Dr ljfpXX">4</div><img src="static/img/regular_5.svg" alt="Stars Rating" class="sc-iIUSfW heuGYt"><div class="sc-cvZATX jjgzVw"></div><div class="sc-avfBU gRwYBo" style="margin-right: 6rem;"><img src="static/img/google.png" alt="Logo Image" class="sc-gslxyl dgLPQS"><div color="#6F6E6E" class="sc-kmQMkS eoLnMo">236 Reviews</div></div></div></div></div></div></div></a>`],
     "Back" : ["intro"]
     },
     "Community Map": {
@@ -277,14 +277,14 @@ var qa = {
       "answer": "Fall 2024 Term starts on 08/01/2024 and ends on 07/31/2025",
       "answer1": "Let's start with number of bedrooms",
       // "related": [],
-      "images" : ["<div class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='static/img/1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='1 Bed' id='1 Bed'><div></div></div></div>"],
+      "images" : ["<div id='images_btn' class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='static/img/1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='1 Bed' id='1 Bed'><div></div></div></div>"],
       "Back" : ["Availability"]
     },
     "Immediate Move-Ins!": {
       "answer": "Summer 2024 Term starts on 05/01/2024 and ends on 06/30/2024",
       "answer1": "Let's start with number of bedrooms",
       // "related": [],
-      "images" : ["<div class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='static/img/1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='1 Bed' id='1 Bed'><div></div></div></div>"],
+      "images" : ["<div id='images_btn' class='sc-kDThTU sc-lbhJmS csGJDm lCpMk ImageBubbleWrapper'><div class='sc-iNGGwv IZIJi Bubble user-messages' title='selected-image' data='[object Object]'><img alt='beds:1 bedrooms image' src='static/img/1bd.png' class='sc-jeqYYF cSTbkS'  onclick='getOption(event)' value='1 Bed' id='1 Bed'><div></div></div></div>"],
       "Back" : ["Availability"]
     },
     "1 Bed": {
