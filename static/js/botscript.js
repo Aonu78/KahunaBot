@@ -53,8 +53,10 @@ var qa = {
         "related" : ["A/C Or Heat Is Out?","Non Emergency?"],
     },
     "A/C Or Heat Is Out?": {
-        "answer": "Call Office.",
-    },
+        "answer": "Call Office For Pricing ",
+        "answer1": `<a href="tel:8124011454"><div class='sc-bBHHQT cbVbsH circle'><img src='static/img/telephone.png'></div>812-401-1454</a>`,
+
+      },
     "Non Emergency?": {
         "answer": "Put in a work order in resident portal.",
     },
@@ -76,7 +78,9 @@ var qa = {
         "answer": "10PM to 7AM.",
     },
     "What Are The Office Hours?": {
-        "answer": "M-F 10AM to 6PM, Sat 10AM to 2PM, Sun CLOSED.",
+        "answer": `<div class='sc-bBHHQT cbVbsH circle'><img src='static/img/check-icon-purple.png'></div>M-F 10AM to 6PM<br>
+        <div class='sc-bBHHQT cbVbsH circle'><img src='static/img/check-icon-purple.png'></div>Sat 10AM to 2PM<br>
+        <div class='sc-bBHHQT cbVbsH circle'><img src='static/img/check-icon-purple.png'></div>Sun CLOSED<br>`,
     },
     "Amenities FAQ": {
         "answer": "Now select a question",
@@ -95,7 +99,9 @@ var qa = {
     },
     "Contacts": {
         "answer": "The following contact details are avaliable for contacts.",
-        "answer1" : "Phone : 812-401-1454<br><br> Email : eve@kahunamgmt.com",
+        "answer1": `<a href="tel:8124011454"><div class='sc-bBHHQT cbVbsH circle'><img src='static/img/telephone.png'></div>812-401-1454</a><br><br>
+        <a href="mailto:eve@kahunamgmt.com"><div class='sc-bBHHQT cbVbsH circle'><img src='static/img/mail.png'></div>eve@kahunamgmt.com</a><br>`,
+
         "Back" : ["intro"]
     },
     "Schedule Appointment": {
@@ -116,7 +122,7 @@ var qa = {
     "Reviews & Ratings": {
     "answer": "Here's what people are saying about us.",
     // "img_slide" : ["<img src='https://i.ibb.co/JtTqRFR/Property-Map.jpg' alt='' style='width: 400px;'>"],
-    "rating": [`<div class="sc-hYQoDq dWdoTO SpecialsWrapper" type="review" id='ratingid'><div class="sc-dwsomb bkqRJS ReviewQuicklinksContainer"><div class="sc-pVTma sc-eldixR kRPzFu ffjCOc ReviewQuicklinksWrapper"><div tabindex="0" role="button" class="sc-bkkfTU sc-jtXFOG llLJZS cqulfq"><div class="sc-iqsfdx sc-fFehDp sc-kiIAaw gGlNMg gqjeva fYYww ReviewText quicklinks rating-cls" tabindex="-1"><div class="sc-cLpA-Dr ljfpXX">4</div><img src="regular_5.svg" alt="Stars Rating" class="sc-iIUSfW heuGYt"><div class="sc-cvZATX jjgzVw"></div><div class="sc-avfBU gRwYBo" style="margin-right: 6rem;"><img src="static/img/google.png" alt="Logo Image" class="sc-gslxyl dgLPQS"><div color="#6F6E6E" class="sc-kmQMkS eoLnMo">236 Reviews</div></div></div></div></div></div></div>`],
+    "rating": [`<div class="sc-hYQoDq dWdoTO SpecialsWrapper" type="review" id='ratingid'><div class="sc-dwsomb bkqRJS ReviewQuicklinksContainer"><div class="sc-pVTma sc-eldixR kRPzFu ffjCOc ReviewQuicklinksWrapper"><div tabindex="0" role="button" class="sc-bkkfTU sc-jtXFOG llLJZS cqulfq"><div class="sc-iqsfdx sc-fFehDp sc-kiIAaw gGlNMg gqjeva fYYww ReviewText quicklinks rating-cls" tabindex="-1"><div class="sc-cLpA-Dr ljfpXX">4</div><img src="static/img/regular_5.svg" alt="Stars Rating" class="sc-iIUSfW heuGYt"><div class="sc-cvZATX jjgzVw"></div><div class="sc-avfBU gRwYBo" style="margin-right: 6rem;"><img src="static/img/google.png" alt="Logo Image" class="sc-gslxyl dgLPQS"><div color="#6F6E6E" class="sc-kmQMkS eoLnMo">236 Reviews</div></div></div></div></div></div></div>`],
     "Back" : ["intro"]
     },
     "Community Map": {
