@@ -40,7 +40,100 @@
         </div>
       <div id="chatBody" class="p-3">
         
+        <!-- <div class="w3-display-container">
+          <div class="mySlides" style="display: block;    height: 100px;">
+            <div class="sc-hYQoDq dWdoTO SpecialsWrapper spacemaker" type="date">
+              <div class="sc-bilypg eIFRxL AppointmentsStyledCarousel carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="sc-eGPWxh hpKKf StyledCarouselItem" id="dateContainer">
+                      <div id="1" onclick="getOptiondDate(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+                        <div class="date-content">
+                          <span class="weekday">Tuesday</span>
+                          <span class="day">17</span>
+                          <span class="month">October</span>
+                        </div>
+                      </div>
+                      <div id="2" onclick="getOptiondDate(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+                        <div class="date-content">
 
+                        <span class="weekday">Wednesday</span>
+                        <span class="day">18</span>
+                        <span class="month">October</span>
+                        </div>
+
+                      </div>
+                      <div id="3" onclick="getOptiondDate(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+                        <div class="date-content">
+
+                        <span class="weekday">Thursday</span>
+                        <span class="day">19</span>
+                        <span class="month">October</span>
+                        </div>
+
+                      </div>
+                      <div id="4" onclick="getOptiondDate(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+                        <div class="date-content">
+
+                        <span class="weekday">Friday</span>
+                        <span class="day">20</span>
+                        <span class="month">October</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>          
+          </div> 
+          <div class="mySlides" style="display: none;    height: 100px;">
+            <div class="sc-hYQoDq dWdoTO SpecialsWrapper" type="date">
+              <div class="sc-bilypg eIFRxL AppointmentsStyledCarousel carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="sc-eGPWxh hpKKf StyledCarouselItem" id="dateContainer">
+                      <div id="1" onclick="getOptiondDate(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+                        <div class="date-content">
+                          <span class="weekday">Tuesday</span>
+                          <span class="day">17</span>
+                          <span class="month">October</span>
+                        </div>
+                      </div>
+                      <div id="2" onclick="getOptiondDate(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+                        <div class="date-content">
+
+                        <span class="weekday">Wednesday</span>
+                        <span class="day">18</span>
+                        <span class="month">October</span>
+                        </div>
+
+                      </div>
+                      <div id="3" onclick="getOptiondDate(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+                        <div class="date-content">
+
+                        <span class="weekday">Thursday</span>
+                        <span class="day">19</span>
+                        <span class="month">October</span>
+                        </div>
+
+                      </div>
+                      <div id="4" onclick="getOptiondDate(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+                        <div class="date-content">
+
+                        <span class="weekday">Friday</span>
+                        <span class="day">20</span>
+                        <span class="month">October</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <button style="    margin-top: -12%;" class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">❮</button>
+            <button style="    margin-top: -12%;" class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">❯</button>
+            </div> -->
       </div>
         <div id="chat_footer" class="footer_div px-3 py-2 align-items-center justify-content-between">
           <div class="flex-fill">
@@ -74,6 +167,11 @@
 <!-- it shuld be remain in same file do not place it to other file  -->
 
 <script>
+const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+
+
   var html = ''
   var mbox = document.getElementById('messageBox')
   var chatBody = document.getElementById('chatBody')
@@ -97,7 +195,8 @@
   var foulWords = ["shit", "bitch", "cunt", "pussy", "asshole", "gay", "piss", "hell", "fuck", "dick", "cock", "titty", "nigger"]
   var appointment = ''
   var purpose = ''
-
+  const myList = ['9:00', '10:00', '11:00', "12:00", '1:00',"2:00",'3:00',"4:00","5:00","6:00","7:00","8:00"]
+  const myList1 = ['AM', 'AM', 'AM', "AM", 'PM',"PM",'PM',"PM","PM","PM","PM","PM"]
   var slideIndex = 0
   showDivs(slideIndex)
   
@@ -142,28 +241,13 @@ function subblockdisplay(){
     $('#ratingid').remove()
     $('#d_img').remove()
     $('#images_btn').remove()
-
+    $('#datediv').remove()
   }
   $( document ).ready(async function() {
 
 
 })
   async function send_email(){
-
-    // two method one for php db and other with email
-
-    // with php example
-    // <?php
-    //         $db = mysqli_connect(localhost,root,root,hospital) or die ("Opps, Some thing went wrong!");
-    //         $today = date('Y-m-d');
-    //         mysqli_query($db,"INSERT INTO `view` (`id`, `date`, `device`) VALUES (NULL, '$today', 'mobile' )" ); 
-    // ?>
-
-// with API Example
-    // # variable are stored in name, phone and email. 
-    // # so we can use a API to send these data to make a notofication
-    // Example of how api work for it to send data.
-    // also tested
     $.post("https://kahonabot-1-r0896406.deta.app/sendmail/",
       {ajax_name:name,
       ajax_email:email,
@@ -183,29 +267,30 @@ function subblockdisplay(){
     displayhide(sug_nm-1)
     Prev = opt
     chatBody.innerHTML += onUserMessage(opt)
+
     if("Live Video" == opt){
       appointment = 'Schedule Appointment'
       purpose = 'For Live Video'
       phonebl = true
-      opt = "Name"
+      opt = "Getdate"
     }
     if("Self-Guided" == opt){
       appointment = 'Schedule Appointment'
       purpose = 'For Self-Guided'
       phonebl = true
-      opt = "Name"
+      opt = "Getdate"
     }
     if("Phone Call" == opt){
       appointment = 'Schedule Appointment'
       purpose = 'For Phone Call'
       phonebl = true
-      opt = "Name"
+      opt = "Getdate"
     }
     if("In-Person" == opt){
       appointment = 'Schedule Appointment'
       purpose = 'For In-Person'
       phonebl = true
-      opt = "Name"
+      opt = "Getdate"
     }
     if("Phone" == opt){
       appointment = 'Contact Me'
@@ -231,7 +316,7 @@ function subblockdisplay(){
       phonebl = true
       opt = "Name"
     }
-    
+
     if ("BACK" == opt){
       if(tem == 1){
         Previous.pop()
@@ -254,6 +339,7 @@ function subblockdisplay(){
     if (qa[opt] === undefined) return onBotMessage(qa.intro)
     // alert(opt)
     // alert(qa[opt]['answer'])
+    // alert(opt)
     onBotMessage(qa[opt])
   }
   function endChat() {
@@ -434,6 +520,126 @@ function subblockdisplay(){
         <div class="botName col-2"><img src="static/img/blank.png" alt="" class="fIpSMA"></div>
         <div class="botMessage col">${args.answer1}</div></div>`
         }
+    //   if(args.answer == 'Choose a Time'){
+    //   html +=  `<div class="sc-hYQoDq dWdoTO SpecialsWrapper spacemaker" type="date">
+    //                 <div class="sc-bilypg eIFRxL AppointmentsStyledCarousel carousel slide">
+    //                   <div class="carousel-inner">
+    //                     <div class="carousel-item active">
+    //                       <div class="sc-eGPWxh hpKKf StyledCarouselItem" id="dateContainer">
+    //                         <div onclick="getOptiondDate1(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+    //                           <div class="date-content">
+    //                             <span class="day">1:00</span>
+    //                             <span class="month">PM</span>
+    //                           </div>
+    //                         </div>
+    //                         <div onclick="getOptiondDate1(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+    //                           <div class="date-content">
+    //                             <span class="day">2:00</span>
+    //                             <span class="month">PM</span>
+    //                           </div>
+    //                         </div>
+    //                         <div onclick="getOptiondDate1(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+    //                           <div class="date-content">
+    //                             <span class="day">3:00</span>
+    //                             <span class="month">PM</span>
+    //                           </div>
+    //                         </div>
+    //                         <div onclick="getOptiondDate1(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+    //                           <div class="date-content">
+    //                             <span class="day">4:00</span>
+    //                             <span class="month">PM</span>
+    //                           </div>
+    //                         </div>
+    //                         </div>
+    //                     </div>
+    //                   </div>
+    //                 </div>
+    //               </div>`
+    // }
+    if(args.answer == 'Choose a Time'){
+          var dateformate = true
+          html +=  `<div class="w3-display-container" id='datediv'>`
+            for (let j = 4; j < 13; j +=4){
+              if(j == 4){
+                html += `<div class="mySlides" style="display: block;    height: 100px;">`
+              }
+              else{
+                html += `<div class="mySlides" style="display: none;    height: 100px;">`
+              }
+         html += `<div class="sc-hYQoDq dWdoTO SpecialsWrapper spacemaker" type="date">
+                    <div class="sc-bilypg eIFRxL AppointmentsStyledCarousel carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="sc-eGPWxh hpKKf StyledCarouselItem" id="dateContainer">
+                            `
+                            const today = new Date();
+for (let i = j-4; i < j; i++) {
+                               
+  html +=       `<div onclick="getOptiondDate1(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+                              <div class="date-content">
+                                <span class="day">${myList[i]}</span>
+                                <span class="month">${myList1[i]}</span>
+                              </div>
+                            </div>
+                            `}
+                html +=   `</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>          
+                </div>`
+              }
+      html +=  `<button style="    margin-top: -12%;" class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">❮</button>
+                <button style="    margin-top: -12%;" class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">❯</button>
+              </div>`
+        }
+
+        if(args.answer == 'Choose a Day'){
+          var dateformate = true
+          html +=  `<div class="w3-display-container" id='datediv'>`
+            for (let j = 4; j < 13; j +=4){
+              if(j == 4){
+                html += `<div class="mySlides" style="display: block;    height: 100px;">`
+              }
+              else{
+                html += `<div class="mySlides" style="display: none;    height: 100px;">`
+              }
+         html += `<div class="sc-hYQoDq dWdoTO SpecialsWrapper spacemaker" type="date">
+                    <div class="sc-bilypg eIFRxL AppointmentsStyledCarousel carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="sc-eGPWxh hpKKf StyledCarouselItem" id="dateContainer">
+                            `
+                            const today = new Date();
+for (let i = j-4; i < j; i++) {
+  const futureDate = new Date(today);
+  futureDate.setDate(today.getDate() + i);
+  const dayOfWeek = daysOfWeek[futureDate.getDay()];
+  const month = months[futureDate.getMonth()];
+  const day = futureDate.getDate();
+  const year = futureDate.getFullYear();
+  console.log(`Date ${i + 1}: ${dayOfWeek}, ${month} ${day}, ${year}`);
+                               
+  html +=       `<div onclick="getOptiondDate(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
+                              <div class="date-content">
+                                <span class="weekday">${dayOfWeek}</span>
+                                <span class="day">${day}</span>
+                                <span class="month">${month}</span>
+                              </div>
+                            </div>
+                            `}
+                html +=   `</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>          
+                </div>`
+              }
+      html +=  `<button style="    margin-top: -12%;" class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">❮</button>
+                <button style="    margin-top: -12%;" class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">❯</button>
+              </div>`
+        }
+
         if (args.d_img){
       var hrf = args.d_img;
       for (var r of hrf) {
@@ -497,14 +703,11 @@ function subblockdisplay(){
       if (args.rating) {
       html += args.rating}
       if (Prev == ''){
-      // alert("Greater.............")
     }
     else{
       html += `</div>`
 
-            // html += `<div class="suggestions SjQJt" id='suggest_bot`+sug_nm+`' style="margin-right: 28px;">`
     html += `<div class="sc-pVTma sc-TBWwm kRPzFu lliVEy BackQuickLinkWrapper"><div onclick="getOption(event)" id='Backbtn`+sug_nm+`' class="sc-pVTma kRPzFu TextAppearFromBottom"><div class="sc-bkkfTU llLJZS QuicklinkButton" tabindex="0" role="button"><div class="sc-iqsfdx sc-crHlIS sc-fotPbf gGlNMg ivrzjL dMliuX BackQuickLinkText quickLinks" style="border-radius:25px;width:175px"><div class="sc-ieebsP sc-dJjZJu eNjgfc kszVAv arrow left-arrow"></div><span style="margin-left: 60px;">Back</span></div></div></div></div>`
-    // html += `</div>`
   }
     var id = Math.random().toString(36).substring(3)
     chatBody.innerHTML += spinnerBlock(id)

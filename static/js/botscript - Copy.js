@@ -109,16 +109,6 @@ var qa = {
       "related": ["In-Person", "Phone Call", "Self-Guided", "Live Video"],
       "Back" : ["intro"]
     },
-    "Getdate": {
-      "answer": "Choose a Day",
-      // "related": ["In-Person", "Phone Call", "Self-Guided", "Live Video"],
-      "Back" : ["intro"]
-    },
-    "Gettime": {
-      "answer": "Choose a Time",
-      // "related": ["In-Person", "Phone Call", "Self-Guided", "Live Video"],
-      "Back" : ["intro"]
-    },
     "Photos": {
       "answer": "Which Method whould you like to chose?",
       "related": ["Community Photo", "Apartments Photo", "Availability"],
@@ -429,81 +419,3 @@ var qa = {
     },
   }
 
-  function getOptiondDate(event) {
-    // Get the parent date div
-    const clickedDateDiv = event.currentTarget;
-  
-    // Extract the date information from the clicked div
-    const dateContent = clickedDateDiv.querySelector(".date-content");
-    const weekday = dateContent.querySelector(".weekday").textContent;
-    const day = dateContent.querySelector(".day").textContent;
-    const month = dateContent.querySelector(".month").textContent;
-  
-    // Create a date string
-    const selectedDate = `${weekday}, ${month} ${day}`; // You can replace "2023" with the desired year.
-  
-    // Display the selected date
-    alert(`Selected Date: ${selectedDate}`);
-
-    chatBody.innerHTML += onUserMessage(selectedDate)
-    displayhide(sug_nm-1)
-    opt = 'Gettime'
-    if ("BACK" == opt){
-      if(tem == 1){
-        Previous.pop()
-        opt = Previous.pop()
-        tem = 0
-        displayhide(sug_nm)
-        inputstart = 0
-    }
-      else{
-        opt = Previous.pop()
-        inputstart = 0
-      }
-    }
-    else{
-      tem = 1,
-      Previous.push(opt)
-    }
-    if (qa[opt] === undefined) return onBotMessage(qa.intro)
-    onBotMessage(qa[opt])
-  }
-
-  function getOptiondDate1(event) {
-    // Get the parent date div
-    const clickedDateDiv = event.currentTarget;
-  
-    // Extract the date information from the clicked div
-    const dateContent = clickedDateDiv.querySelector(".date-content");
-    const day = dateContent.querySelector(".day").textContent;
-    const month = dateContent.querySelector(".month").textContent;
-  
-    // Create a date string
-    const selectedTime = `${day} ${month}`; // You can replace "2023" with the desired year.
-  
-    // Display the selected date
-    alert(`Selected Date: ${selectedTime}`);
-
-    chatBody.innerHTML += onUserMessage(selectedTime)
-    displayhide(sug_nm-1)
-    opt = 'Name'
-    if ("BACK" == opt){
-      if(tem == 1){
-        Previous.pop()
-        opt = Previous.pop()
-        tem = 0
-        displayhide(sug_nm)
-        inputstart = 0
-    }
-      else{
-        opt = Previous.pop()
-        inputstart = 0
-      }
-    }
-    else{
-      tem = 1,
-      Previous.push(opt)
-    }
-    if (qa[opt] === undefined) return onBotMessage(qa.intro)
-    onBotMessage(qa[opt])
-  }
