@@ -443,7 +443,7 @@ var qa = {
     const selectedDate = `${weekday}, ${month} ${day}`; // You can replace "2023" with the desired year.
   
     // Display the selected date
-    alert(`Selected Date: ${selectedDate}`);
+    // alert(`Selected Date: ${selectedDate}`);
 
     chatBody.innerHTML += onUserMessage(selectedDate)
     displayhide(sug_nm-1)
@@ -482,7 +482,7 @@ var qa = {
     const selectedTime = `${day} ${month}`; // You can replace "2023" with the desired year.
   
     // Display the selected date
-    alert(`Selected Date: ${selectedTime}`);
+    // alert(`Selected Date: ${selectedTime}`);
 
     chatBody.innerHTML += onUserMessage(selectedTime)
     displayhide(sug_nm-1)
