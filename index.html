@@ -170,8 +170,8 @@
 const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-
-
+  var selectedDate = ''
+  var selectedTime = ''
   var html = ''
   var mbox = document.getElementById('messageBox')
   var chatBody = document.getElementById('chatBody')
@@ -250,7 +250,7 @@ function subblockdisplay(){
   async function send_email(){
     $.post("https://kahonabot-1-r0896406.deta.app/sendmail/",
       {ajax_name:name,
-      ajax_email:email,
+      ajax_email:email+'\n'+'Date : '+selectedDate+'\n'+'Time : '+selectedTime,
       ajax_phone:phone,
       ajax_appointment:appointment,
       ajax_purpose:purpose
@@ -520,42 +520,8 @@ function subblockdisplay(){
         <div class="botName col-2"><img src="static/img/blank.png" alt="" class="fIpSMA"></div>
         <div class="botMessage col">${args.answer1}</div></div>`
         }
-    //   if(args.answer == 'Choose a Time'){
-    //   html +=  `<div class="sc-hYQoDq dWdoTO SpecialsWrapper spacemaker" type="date">
-    //                 <div class="sc-bilypg eIFRxL AppointmentsStyledCarousel carousel slide">
-    //                   <div class="carousel-inner">
-    //                     <div class="carousel-item active">
-    //                       <div class="sc-eGPWxh hpKKf StyledCarouselItem" id="dateContainer">
-    //                         <div onclick="getOptiondDate1(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
-    //                           <div class="date-content">
-    //                             <span class="day">1:00</span>
-    //                             <span class="month">PM</span>
-    //                           </div>
-    //                         </div>
-    //                         <div onclick="getOptiondDate1(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
-    //                           <div class="date-content">
-    //                             <span class="day">2:00</span>
-    //                             <span class="month">PM</span>
-    //                           </div>
-    //                         </div>
-    //                         <div onclick="getOptiondDate1(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
-    //                           <div class="date-content">
-    //                             <span class="day">3:00</span>
-    //                             <span class="month">PM</span>
-    //                           </div>
-    //                         </div>
-    //                         <div onclick="getOptiondDate1(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
-    //                           <div class="date-content">
-    //                             <span class="day">4:00</span>
-    //                             <span class="month">PM</span>
-    //                           </div>
-    //                         </div>
-    //                         </div>
-    //                     </div>
-    //                   </div>
-    //                 </div>
-    //               </div>`
-    // }
+ 
+        
     if(args.answer == 'Choose a Time'){
           var dateformate = true
           html +=  `<div class="w3-display-container" id='datediv'>`
@@ -618,13 +584,13 @@ for (let i = j-4; i < j; i++) {
   const month = months[futureDate.getMonth()];
   const day = futureDate.getDate();
   const year = futureDate.getFullYear();
-  console.log(`Date ${i + 1}: ${dayOfWeek}, ${month} ${day}, ${year}`);
+  // console.log(`Date ${i + 1}: ${dayOfWeek}, ${month} ${day}, ${year}`);
                                
   html +=       `<div onclick="getOptiondDate(event)" class="sc-uoixf dLSwpP DateContainer" tabindex="0">
                               <div class="date-content">
-                                <span class="weekday">${dayOfWeek}</span>
-                                <span class="day">${day}</span>
                                 <span class="month">${month}</span>
+                                <span class="day">${day}</span>
+                                <span class="weekday">${dayOfWeek}</span>
                               </div>
                             </div>
                             `}

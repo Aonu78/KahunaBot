@@ -440,7 +440,7 @@ var qa = {
     const month = dateContent.querySelector(".month").textContent;
   
     // Create a date string
-    const selectedDate = `${weekday}, ${month} ${day}`; // You can replace "2023" with the desired year.
+    selectedDate = `${weekday}, ${month} ${day}`; // You can replace "2023" with the desired year.
   
     // Display the selected date
     // alert(`Selected Date: ${selectedDate}`);
@@ -479,7 +479,7 @@ var qa = {
     const month = dateContent.querySelector(".month").textContent;
   
     // Create a date string
-    const selectedTime = `${day} ${month}`; // You can replace "2023" with the desired year.
+    selectedTime = `${day} ${month}`; // You can replace "2023" with the desired year.
   
     // Display the selected date
     // alert(`Selected Date: ${selectedTime}`);
